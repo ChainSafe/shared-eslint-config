@@ -24,6 +24,12 @@ module.exports = {
         "plugin:prettier/recommended"
     ],
     rules: {
+        'prettier/prettier': [
+            'error',
+            {
+              'endOfLine': 'auto',
+            }
+        ],
         "no-unused-vars": "off",
         "@typescript-eslint/no-misused-promises": [
             "error",
