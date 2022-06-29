@@ -11,6 +11,9 @@ describe("validate config", function () {
             baseConfig: eslintrc,
           })
           var result = await cli.lintFiles("./src/index.ts");
+          if(result[0].errorCount > 0) {
+            console.error(result[0].messages)
+          }
           assert.equal(result[0].errorCount, 0)
     })
 })
