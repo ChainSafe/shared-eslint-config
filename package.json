@@ -6,7 +6,7 @@
     "ChainSafe <info@chainsafe.io>"
   ],
   "scripts": {
-    "test": "mocha test/*.js"
+    "test": "mocha --timeout 10000 test/*.js"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.30.0",
