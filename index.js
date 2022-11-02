@@ -41,7 +41,8 @@ module.exports = {
             }
         ],
         "@typescript-eslint/no-unused-vars": ["error", {
-            "varsIgnorePattern": "^_"
+            "varsIgnorePattern": "^_",
+            "ignoreRestSiblings": true
         }],
         "@typescript-eslint/explicit-function-return-type": ["error", {
             "allowExpressions": true
