@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/ChainSafe/eslint-config/compare/v1.0.0...v1.1.0) (2022-11-02)
+
+
+### Features
+
+* ignoreRestSibilings in `@typescript-eslint/no-unused-vars` ([#2](https://github.com/ChainSafe/eslint-config/issues/2)) ([fc6059d](https://github.com/ChainSafe/eslint-config/commit/fc6059dd6cb088f55f277d63a13d373eddd1ae9e))
+
 ## 1.0.0 (2022-06-29)
 
 
