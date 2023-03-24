@@ -11,23 +11,33 @@ This package provides ChainSafe's .eslintrc as an extensible shared config.
 The provided configuration contains shared ESLint rules for typescript projects across ChainSafe. To use this configuration you'll need `.eslintrc.js` file in your project root with the following content:
 
 ```js
-require("@rushstack/eslint-patch/modern-module-resolution");
-
 module.exports = {
   extends: "@chainsafe",
 }
 
 ```
 
-You'll need to add this package and eslint-patch to your (dev) dependencies and satisfy "typescript" optional peer dependency yourself.
-`yarn add --dev @chainsafe/eslint-config @rushstack/eslint-patch typescript`
+### Monorepo
 
-> Note:`@rushstack/eslint-patch` is eslint patch provided by mycrosoft for some of most long standing issues in eslint (https://github.com/eslint/eslint/issues/3458). Tldr eslint doesn't resolve dependencies relative to shared config which means every user of shared config would have to install all required plugins in their project.
+To make eslint work in monorepo's, make sure tsconfig files are relative to the eslint file.
+Base eslint file in the root directory should have `root: true` option set.
+For example in the package, you would have something like:
+
+```js
+const path = require("path")
+
+module.exports = {
+    extends: "../../.eslintrc.js",
+    parserOptions: {
+        project: path.join(__dirname, "tsconfig.json"),
+        tsconfigRootDir: path.join(__dirname)
+    },
+}
+```
 
 ### With Mocha and Chai
 
 ```js
-require("@rushstack/eslint-patch/modern-module-resolution");
 
 module.exports = {
   extends: "@chainsafe/eslint-config/ts-mocha-chai",
