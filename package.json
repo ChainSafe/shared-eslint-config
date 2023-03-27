@@ -10,18 +10,18 @@
   },
   "dependencies": {
     "@fintechstudios/eslint-plugin-chai-as-promised": "^3.1.0",
-    "@typescript-eslint/eslint-plugin": "^5.30.0",
-    "@typescript-eslint/parser": "^5.30.0",
-    "eslint-config-prettier": "^8.5.0",
+    "@typescript-eslint/eslint-plugin": "^5.56.0",
+    "@typescript-eslint/parser": "^5.56.0",
+    "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-chai-expect": "^3.0.0",
-    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-mocha": "^10.1.0",
-    "eslint-plugin-prettier": "^4.1.0",
-    "prettier": "^2.7.1"
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.7"
   },
   "peerDependencies": {
-    "eslint": ">= 7 <= 8",
-    "typescript": ">=3.3.1 <4.8.0"
+    "eslint": ">= 8.21.0",
+    "typescript": ">=4"
   },
   "license": "MIT",
   "devDependencies": {
@@ -30,9 +30,9 @@
     "@types/mocha": "^9.1.1",
     "chai": "^4.3.7",
     "chai-as-promised": "^7.1.1",
-    "eslint": "^8.18.0",
+    "eslint": "^8.36.0",
     "mocha": "^10.0.0",
-    "typescript": "^4.7.4"
+    "typescript": "^4"
   },
   "eslintConfig": {
     "extends": "."
