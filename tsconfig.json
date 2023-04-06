@@ -69,7 +69,7 @@
     "skipLibCheck": true,                           /* Skip type checking of declaration files. */
     "forceConsistentCasingInFileNames": true,        /* Disallow inconsistently-cased references to the same file. */
     "useDefineForClassFields" : true
-  },˚
+  },
   "include": [
     "src/*.ts",
     "node_modules/@types/mocha/index.d.ts"

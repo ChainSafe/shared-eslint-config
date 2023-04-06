@@ -23,7 +23,7 @@ __metadata:
     eslint-plugin-import: ^2.27.5
     eslint-plugin-mocha: ^10.1.0
     eslint-plugin-prettier: ^4.2.1
-    mocha: ^10.0.0
+    mocha: ^10.1.0
     prettier: ^2.8.7
     typescript: ^4
   peerDependencies:
@@ -2286,7 +2286,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mocha@npm:^10.0.0":
+"mocha@npm:^10.1.0":
   version: 10.2.0
   resolution: "mocha@npm:10.2.0"
   dependencies:
