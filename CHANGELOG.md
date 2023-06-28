@@ -1,5 +1,23 @@
 # Changelog
 
+## [2.0.0](https://github.com/ChainSafe/eslint-config/compare/v1.1.0...v2.0.0) (2023-03-27)
+
+
+### ⚠ BREAKING CHANGES
+
+* bump dependencies and minimum eslint version ([#7](https://github.com/ChainSafe/eslint-config/issues/7))
+* add mocha and chai related rules
+
+### Features
+
+* add mocha and chai related rules ([bab756b](https://github.com/ChainSafe/eslint-config/commit/bab756b901be3364574d23eb5621dad96959f5e5))
+* add mocha and chai related rules ([#4](https://github.com/ChainSafe/eslint-config/issues/4)) ([bab756b](https://github.com/ChainSafe/eslint-config/commit/bab756b901be3364574d23eb5621dad96959f5e5))
+
+
+### Bug Fixes
+
+* bump dependencies and minimum eslint version ([#7](https://github.com/ChainSafe/eslint-config/issues/7)) ([490e0ed](https://github.com/ChainSafe/eslint-config/commit/490e0ed14bef84ae94a72f8707341b9298cca05a))
+
 ## [1.1.0](https://github.com/ChainSafe/eslint-config/compare/v1.0.0...v1.1.0) (2022-11-02)
 
 
