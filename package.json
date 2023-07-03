@@ -6,7 +6,7 @@
     "ChainSafe <info@chainsafe.io>"
   ],
   "scripts": {
-    "test": "mocha --timeout 10000 test/*.js"
+    "test": "mocha --timeout 10000 test/*.spec.js"
   },
   "dependencies": {
     "@fintechstudios/eslint-plugin-chai-as-promised": "^3.1.0",
@@ -14,6 +14,7 @@
     "@typescript-eslint/parser": "^5.56.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-chai-expect": "^3.0.0",
+    "eslint-plugin-eslint-comments": "^3.2.0",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-mocha": "^10.1.0",
     "eslint-plugin-prettier": "^4.2.1",
