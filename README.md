@@ -1,8 +1,7 @@
 # @chainsafe/eslint-config
 
-![Node.js CI][node.js ci]
-[![package][version.icon]][package.url]
-[![styled with prettier][prettier.icon]][prettier.url]
+[![Node.js CI](https://github.com/ChainSafe/eslint-config/actions/workflows/ci.yaml/badge.svg?branch=main)](https://github.com/ChainSafe/eslint-config/actions/workflows/ci.yaml)
+[![npm version](https://badge.fury.io/js/@chainsafe%2Feslint-config.svg)](https://badge.fury.io/js/@chainsafe%2Feslint-config)
 
 This package provides ChainSafe's .eslintrc as an extensible shared config.
 
