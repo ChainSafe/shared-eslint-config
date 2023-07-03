@@ -5,6 +5,13 @@
   "contributors": [
     "ChainSafe <info@chainsafe.io>"
   ],
+  "homepage": "https://github.com/ChainSafe/eslint-config#readme",
+  "bugs": {
+    "url": "https://github.com/ChainSafe/eslint-config/issues"
+  },
+  "repository": {
+    "url": "https://github.com/ChainSafe/eslint-config"
+  },
   "scripts": {
     "test": "mocha --timeout 10000 test/*.js"
   },
