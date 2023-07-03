@@ -13,13 +13,14 @@ module.exports = {
     plugins: [
         "@typescript-eslint",
         "prettier",
-        "import"
+        "import",
+        "eslint-comments"
     ],
     extends: [
         "eslint:recommended",
         "plugin:@typescript-eslint/eslint-recommended",
         "plugin:@typescript-eslint/recommended-requiring-type-checking",
-        "plugin:prettier/recommended"
+        "plugin:prettier/recommended",
     ],
     rules: {
         'prettier/prettier': [
@@ -63,6 +64,11 @@ module.exports = {
         "import/no-duplicates": "error",
         "import/order": "error",
         "import/newline-after-import": "error",
+        "@typescript-eslint/consistent-type-imports": "error",
+        //disallow eslint-disable comments without rule names
+        "eslint-comments/no-unlimited-disable": "error",
+        //disallow unused eslint-disable comments
+        "eslint-comments/no-unused-disable": "error",
 
     }
 };

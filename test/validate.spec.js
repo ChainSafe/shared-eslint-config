@@ -1,6 +1,7 @@
 const eslint = require("eslint");
 const eslintrc = require("..")
-const eslintrcMocha = require("../ts-mocha-chai")
+const eslintrcMocha = require("../ts-mocha-chai");
+const { assertHasEslintError } = require("./helper");
 const assert = require('assert').strict;
 
 
@@ -13,10 +14,9 @@ describe("validate config", function () {
             baseConfig: eslintrc,
           })
           var result = await cli.lintFiles("./src/index.ts");
-          if(result[0].errorCount > 0) {
-            console.error(result[0].messages)
-          }
-          assert.equal(result[0].errorCount, 0)
+          assertHasEslintError(result, "@typescript-eslint/consistent-type-imports")
+          assertHasEslintError(result, "eslint-comments/no-unlimited-disable")
+          assertHasEslintError(result, "eslint-comments/no-unused-disable")
       })
     })
 
@@ -26,7 +26,7 @@ describe("validate config", function () {
             useEslintrc: false,
             baseConfig: eslintrcMocha,
           })
-          var result = await cli.lintFiles("./src/index.ts");
+          var result = await cli.lintFiles("./src/index.spec.ts");
           if(result[0].errorCount > 0) {
             console.error(result[0].messages)
           }
@@ -51,7 +51,10 @@ describe("validate config", function () {
             baseConfig: eslintrcMocha,
           })
           var result = await cli.lintFiles("./src/index_error.spec.ts");
-          assert.equal(result[0].errorCount, 5)
+          assertHasEslintError(result, "@fintechstudios/chai-as-promised/no-unhandled-promises")
+          assertHasEslintError(result, "chai-expect/terminating-properties")
+          assertHasEslintError(result, "mocha/no-mocha-arrows")
+          assertHasEslintError(result, "mocha/no-top-level-hooks")
       })
     })
 
