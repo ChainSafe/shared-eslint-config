@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.1.0](https://github.com/ChainSafe/eslint-config/compare/v2.0.0...v2.1.0) (2023-07-03)
+
+
+### Features
+
+* force type imports and removal of unused eslint rules ([#11](https://github.com/ChainSafe/eslint-config/issues/11)) ([14183ab](https://github.com/ChainSafe/eslint-config/commit/14183ab95b087dddaa097d6b989ba1c27eae8a1b))
+
+
+### Miscellaneous
+
+* update readme and github links ([#12](https://github.com/ChainSafe/eslint-config/issues/12)) ([49f03af](https://github.com/ChainSafe/eslint-config/commit/49f03afea3da4eb2fea7e13ffaf8896cfde75a27))
+
 ## [2.0.0](https://github.com/ChainSafe/eslint-config/compare/v1.1.0...v2.0.0) (2023-03-27)
 
 
