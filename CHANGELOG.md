@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.1.1](https://github.com/ChainSafe/eslint-config/compare/v2.1.0...v2.1.1) (2023-08-18)
+
+
+### Bug Fixes
+
+* update eslint and prettier deps ([#17](https://github.com/ChainSafe/eslint-config/issues/17)) ([b264f5a](https://github.com/ChainSafe/eslint-config/commit/b264f5a23391d997e7ac6025d4c296225966bee8))
+
+
+### Miscellaneous
+
+* **deps:** bump semver from 6.3.0 to 6.3.1 ([#14](https://github.com/ChainSafe/eslint-config/issues/14)) ([1512a1a](https://github.com/ChainSafe/eslint-config/commit/1512a1abc8ec698d9d06eee7a3cd54775ea977ba))
+
 ## [2.1.0](https://github.com/ChainSafe/eslint-config/compare/v2.0.0...v2.1.0) (2023-07-03)
 
 
