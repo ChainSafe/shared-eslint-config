@@ -27,5 +27,14 @@ module.exports = {
         'chai-expect/terminating-properties': 'error',
         "@fintechstudios/chai-as-promised/no-unhandled-promises": "error",
         "@fintechstudios/chai-as-promised/no-await-in-condition": "error"
-    }
+    },
+    "overrides": [
+        {
+            "files": ["*.spec.js", "*.spec.ts"],
+            "rules": {
+                "prefer-arrow-callback": "off",
+                "func-names": "off",
+            }
+        }
+    ],
 }

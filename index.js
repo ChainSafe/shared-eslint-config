@@ -3,33 +3,140 @@ module.exports = {
         node: true,
         es6: true
     },
-    rules: {
-    },
     parser: '@typescript-eslint/parser',
     parserOptions: {
       sourceType: 'module',
       project: './tsconfig.json'
     },
-    plugins: [
-        "@typescript-eslint",
-        "prettier",
-        "import",
-        "eslint-comments"
-    ],
     extends: [
         "eslint:recommended",
         "plugin:@typescript-eslint/eslint-recommended",
         "plugin:@typescript-eslint/recommended-requiring-type-checking",
-        "plugin:prettier/recommended",
+        "prettier",
+        "airbnb-base",
+    ],
+    plugins: [
+        "@typescript-eslint",
+        "prettier",
+        "import",
+        "simple-import-sort",
+        "eslint-comments"
     ],
     rules: {
-        'prettier/prettier': [
-            'error',
+        "func-names": [
+            "error",
+            "as-needed",
             {
-              'endOfLine': 'auto',
+                "generators": "as-needed"
             }
         ],
+        "max-len": [
+            "error",
+            {
+                "code": 120,
+                "ignoreUrls": true,
+                "ignoreStrings": true,
+                "ignoreTemplateLiterals": true,
+                "ignoreRegExpLiterals": true
+            }
+        ],
+        "no-multiple-empty-lines": [
+            "error",
+            {
+                "max": 1
+            }
+        ],
+        "no-param-reassign": [
+            "error",
+            {
+                "props": false
+            }
+        ],
+        "no-shadow": "off",
+        "@typescript-eslint/no-shadow": "error",
+        "no-trailing-spaces": [
+            "warn",
+            {
+                "skipBlankLines": true
+            }
+        ],
+        "no-void": ["error", { "allowAsStatement": true }],
         "no-unused-vars": "off",
+        "@typescript-eslint/no-unused-vars": ["error", {
+            "varsIgnorePattern": "^_",
+            "ignoreRestSiblings": true
+        }],
+        "padding-line-between-statements": [
+            "error",
+            {
+                "blankLine": "always",
+                "prev": "*",
+                "next": "return"
+            },
+            {
+                "blankLine": "always",
+                "prev": [
+                    "multiline-const",
+                    "multiline-let",
+                    "multiline-var",
+                    "multiline-expression",
+                    "multiline-block-like"
+                ],
+                "next": "*"
+            },
+            {
+                "blankLine": "always",
+                "prev": ["const", "let", "var", "expression", "multiline-block-like"],
+                "next": ["export"]
+            },
+            {
+                "blankLine": "always",
+                "prev": "directive",
+                "next": "*"
+            },
+            {
+                "blankLine": "any",
+                "prev": "directive",
+                "next": "directive"
+            },
+            {
+                "blankLine": "always",
+                "prev": "block-like",
+                "next": "*"
+            },
+            {
+                "blankLine": "always",
+                "prev": "expression",
+                "next": "*"
+            },
+            {
+                "blankLine": "always",
+                "prev": ["case", "default"],
+                "next": "*"
+            }
+        ],
+        "prefer-destructuring": [
+            "error",
+            {
+                "object": true,
+                "array": false
+            }
+        ],
+        "prefer-const": ["error"],
+        "prefer-rest-params": ["error"],
+        "prefer-spread": ["off"],
+        "prettier/prettier": [
+            "warn",
+            {
+                "semi": true,
+                "trailingComma": "all",
+                "singleQuote": true,
+                "printWidth": 90,
+                "tabWidth": 2,
+                "endOfLine": "auto",
+                "bracketSpacing": true
+            }
+        ],
         "@typescript-eslint/no-misused-promises": [
             "error",
             {
@@ -39,36 +146,38 @@ module.exports = {
               }
             }
         ],
-        "@typescript-eslint/no-unused-vars": ["error", {
-            "varsIgnorePattern": "^_",
-            "ignoreRestSiblings": true
-        }],
         "@typescript-eslint/explicit-function-return-type": ["error", {
             "allowExpressions": true
         }],
+        "@typescript-eslint/consistent-type-definitions": ["error", "type"],
+        "@typescript-eslint/consistent-type-imports": "error",
         "@typescript-eslint/no-require-imports": "error",
-        "import/order": [
-            "error",
-            {
-              "groups": ["builtin", "external", "parent", "internal", "sibling"],
-              "newlines-between": "always",
-              "alphabetize": {
-                order: 'asc'
-              }
-            },
-        ],
         "import/no-cycle": "error",
         "import/no-useless-path-segments": "error",
-        "import/no-extraneous-dependencies": "error",
+        "import/no-extraneous-dependencies": ["error", {
+            "devDependencies": true
+        }],
         "import/first": "error",
         "import/no-duplicates": "error",
-        "import/order": "error",
-        "import/newline-after-import": "error",
-        "@typescript-eslint/consistent-type-imports": "error",
+        "import/prefer-default-export": "off",
+        "import/extensions": "off",
         //disallow eslint-disable comments without rule names
         "eslint-comments/no-unlimited-disable": "error",
         //disallow unused eslint-disable comments
         "eslint-comments/no-unused-disable": "error",
-
+        "simple-import-sort/imports": [
+            "error",
+            {
+                "groups": [
+                    ["^react", "^@?\\w"],
+                    ["^(@|components)(/.*|$)"],
+                    ["^\\u0000"],
+                    ["^\\.\\.(?!/?$)", "^\\.\\./?$"],
+                    ["^\\./(?=.*/)(?!/?$)", "^\\.(?!/?$)", "^\\./?$"],
+                    ["^.+\\.?(css|scss)$"]
+                ]
+            }
+        ],
+        "simple-import-sort/exports": "error",
     }
 };
