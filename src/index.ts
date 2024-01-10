@@ -5,7 +5,10 @@ const opts: MochaInstanceOptions = {
 };
 console.log(opts);
 
+
 const foo = 1;
+
+let b = 1
 
 //eslint-disable-line
 //eslint-disable-line no-undef
