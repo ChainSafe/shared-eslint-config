@@ -3,6 +3,7 @@ const eslintrc = require("..")
 const eslintrcMocha = require("../ts-mocha-chai");
 const { assertHasEslintError } = require("./helper");
 const assert = require('assert').strict;
+const isWindows = process.platform === "win32";
 
 
 describe("validate config", function () {
@@ -43,11 +44,17 @@ describe("validate config", function () {
 
             const result = await cli.lintFiles("./src/index.spec.ts");
 
-            if(result[0].errorCount > 0) {
+            const numberOfExpectedErrors = isWindows ? 7 : 0;
+
+            if(result[0].errorCount > numberOfExpectedErrors) {
                 console.error(result[0].messages);
             }
 
-            assert.equal(result[0].errorCount, 0);
+            assert.equal(result[0].errorCount, numberOfExpectedErrors);
+
+            if (isWindows) {
+                assertHasEslintError(result, "linebreak-style");
+            }
         })
 
         it("load config in mocha eslint to validate all rule syntax is correct", async function() {
@@ -58,11 +65,17 @@ describe("validate config", function () {
 
             const result = await cli.lintFiles("./src/index.spec.ts");
 
-            if(result[0].errorCount > 0) {
+            const numberOfExpectedErrors = isWindows ? 7 : 0;
+
+            if(result[0].errorCount > numberOfExpectedErrors) {
                 console.error(result[0].messages);
             }
 
-            assert.equal(result[0].errorCount, 0);
+            assert.equal(result[0].errorCount, numberOfExpectedErrors);
+
+            if (isWindows) {
+                assertHasEslintError(result, "linebreak-style");
+            }
         })
 
         it("load config in mocha eslint to check if errors are detected", async function() {
