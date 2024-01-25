@@ -43,3 +43,23 @@ module.exports = {
 }
 
 ```
+
+### Frontend Vanilla
+
+```js
+
+module.exports = {
+  extends: "@chainsafe/eslint-config/frontend-vanilla",
+}
+
+```
+
+### Frontend React
+
+```js
+
+module.exports = {
+  extends: "@chainsafe/eslint-config/frontend-react",
+}
+
+```
