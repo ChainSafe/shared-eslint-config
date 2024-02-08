@@ -63,7 +63,11 @@ jobs:
       - run: yarn --immutable
         if: ${{ steps.release.outputs.release_created }}
 
-      - run: npm publish --access public
-        env:
+      - env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
-        if: ${{ steps.release.outputs.release_created }}
+        if: ${{ steps.release.outputs.releases_created }}
+        run: |
+           echo npmAuthToken: "$NODE_AUTH_TOKEN" >> ./.yarnrc.yml
+        
+      - run: yarn npm publish --access public
+        if: ${{ steps.release.outputs.releases_created }}
