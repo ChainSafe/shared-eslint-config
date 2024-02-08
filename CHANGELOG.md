@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.2](https://github.com/ChainSafe/eslint-config/compare/v2.2.1...v2.2.2) (2024-02-08)
+
+
+### Bug Fixes
+
+* release ci ([707b220](https://github.com/ChainSafe/eslint-config/commit/707b220e84995c7b2f47f514b11c205b5f8b82ea))
+
 ## [2.2.1](https://github.com/ChainSafe/eslint-config/compare/v2.2.0...v2.2.1) (2024-02-08)
 
 
