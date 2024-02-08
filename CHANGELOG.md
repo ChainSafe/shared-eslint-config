@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.2.0](https://github.com/ChainSafe/eslint-config/compare/v2.1.1...v2.2.0) (2024-01-25)
+
+
+### Features
+
+* add vanilla and react configs ([#23](https://github.com/ChainSafe/eslint-config/issues/23)) ([a7ab229](https://github.com/ChainSafe/eslint-config/commit/a7ab2291c9307016a43e5de5778aab922f02a1e0))
+
+
+### Miscellaneous
+
+* **CI:** bump node to v20 and enable corepack ([#21](https://github.com/ChainSafe/eslint-config/issues/21)) ([273dbdd](https://github.com/ChainSafe/eslint-config/commit/273dbdd926e2aaa82bd5b18c23ef6fd6acaeab1e))
+
 ## [2.1.1](https://github.com/ChainSafe/eslint-config/compare/v2.1.0...v2.1.1) (2023-08-18)
 
 
