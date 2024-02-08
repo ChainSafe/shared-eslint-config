@@ -37,29 +37,40 @@ module.exports = {
 ### With Mocha and Chai
 
 ```js
-
 module.exports = {
   extends: "@chainsafe/eslint-config/ts-mocha-chai",
 }
-
 ```
 
 ### Frontend Vanilla
 
-```js
+Typescript projects also need to add `eslint-import-resolver-typescript` as devDependency.
 
+```js
 module.exports = {
   extends: "@chainsafe/eslint-config/frontend-vanilla",
+  // add following section if using TS
+  settings: {
+    "import/resolver": {
+      typescript: {}
+    },
+  },
 }
-
 ```
 
 ### Frontend React
 
-```js
+Typescript projects also need to add `eslint-import-resolver-typescript` as devDependency.
 
+```js
 module.exports = {
   extends: "@chainsafe/eslint-config/frontend-react",
+  plugins: ["react", "react-hooks"],
+  // add following section if using TS
+  settings: {
+    "import/resolver": {
+      typescript: {}
+    },
+  },
 }
-
 ```
