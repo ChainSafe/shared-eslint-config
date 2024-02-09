@@ -46,13 +46,7 @@ module.exports = {
 
 ```js
 module.exports = {
-  extends: "@chainsafe/eslint-config/frontend-vanilla",
-  // add following section if using TS
-  settings: {
-    "import/resolver": {
-      typescript: {}
-    },
-  },
+  extends: "@chainsafe/eslint-config/frontend-vanilla"
 }
 ```
 
@@ -60,13 +54,6 @@ module.exports = {
 
 ```js
 module.exports = {
-  extends: "@chainsafe/eslint-config/frontend-react",
-  plugins: ["react", "react-hooks"],
-  // add following section if using TS
-  settings: {
-    "import/resolver": {
-      typescript: {}
-    },
-  },
+  extends: "@chainsafe/eslint-config/frontend-react"
 }
 ```
