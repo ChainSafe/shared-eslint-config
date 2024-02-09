@@ -44,8 +44,6 @@ module.exports = {
 
 ### Frontend Vanilla
 
-Typescript projects also need to add `eslint-import-resolver-typescript` as devDependency.
-
 ```js
 module.exports = {
   extends: "@chainsafe/eslint-config/frontend-vanilla",
@@ -59,8 +57,6 @@ module.exports = {
 ```
 
 ### Frontend React
-
-Typescript projects also need to add `eslint-import-resolver-typescript` as devDependency.
 
 ```js
 module.exports = {
