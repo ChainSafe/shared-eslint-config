@@ -67,6 +67,7 @@ module.exports = {
             "varsIgnorePattern": "^_",
             "ignoreRestSiblings": true
         }],
+        "object-curly-newline": ["error", { "consistent": true }],
         "padding-line-between-statements": [
             "error",
             {
