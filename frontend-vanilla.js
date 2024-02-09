@@ -179,5 +179,10 @@ module.exports = {
             }
         ],
         "simple-import-sort/exports": "error",
-    }
+    },
+    settings: {
+        "import/resolver": {
+            typescript: {}
+        },
+    },
 };
