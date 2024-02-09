@@ -1,5 +1,20 @@
 # Changelog
 
+## [2.2.3](https://github.com/ChainSafe/eslint-config/compare/v2.2.2...v2.2.3) (2024-02-09)
+
+
+### Bug Fixes
+
+* add ts import resolver dep ([#28](https://github.com/ChainSafe/eslint-config/issues/28)) ([740cb34](https://github.com/ChainSafe/eslint-config/commit/740cb3434e9d33cc5371c55e01a35aa90312ab66))
+* update vanilla and README ([#27](https://github.com/ChainSafe/eslint-config/issues/27)) ([1e16414](https://github.com/ChainSafe/eslint-config/commit/1e16414cbd051861fc067469bd7de80838a50d92))
+
+
+### Miscellaneous
+
+* **deps:** bump get-func-name from 2.0.0 to 2.0.2 ([#19](https://github.com/ChainSafe/eslint-config/issues/19)) ([98d62c7](https://github.com/ChainSafe/eslint-config/commit/98d62c767d44bcbadf00d2f30c77f1f061e1b3ad))
+* **deps:** bump word-wrap from 1.2.3 to 1.2.5 ([#18](https://github.com/ChainSafe/eslint-config/issues/18)) ([2b42cb7](https://github.com/ChainSafe/eslint-config/commit/2b42cb783f84d76f232610c8d9f86ee08d1e0725))
+* move plugins/settings to configs ([#29](https://github.com/ChainSafe/eslint-config/issues/29)) ([2d1a859](https://github.com/ChainSafe/eslint-config/commit/2d1a8595fe559ee30d76dce4d107b6d6fc4ca8b3))
+
 ## [2.2.2](https://github.com/ChainSafe/eslint-config/compare/v2.2.1...v2.2.2) (2024-02-08)
 
 
