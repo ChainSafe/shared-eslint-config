@@ -6,7 +6,7 @@ module.exports = {
         ...baseFrontendConfig.extends.filter((item) => item !== "airbnb-base"),
         "airbnb"
     ],
-    plugins: ["react", "react-hooks"],
+    plugins: [...baseFrontendConfig.plugins, "react", "react-hooks"],
     rules: {
         ...baseFrontendConfig.rules,
         // this rule is turned off, but turned on for .js and .ts files (in overrides section), so it doesn't force return types of components :)
