@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.4](https://github.com/ChainSafe/eslint-config/compare/v2.2.3...v2.2.4) (2024-02-16)
+
+
+### Bug Fixes
+
+* update frontend configs ([#30](https://github.com/ChainSafe/eslint-config/issues/30)) ([c0a2279](https://github.com/ChainSafe/eslint-config/commit/c0a2279409e9f4d14aeef51b302d71d63f5b503c))
+
 ## [2.2.3](https://github.com/ChainSafe/eslint-config/compare/v2.2.2...v2.2.3) (2024-02-09)
 
 
